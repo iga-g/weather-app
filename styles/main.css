@@ -182,6 +182,7 @@ a:hover ~ .border-effect {
   flex-direction: column;
   padding: 30pt 30pt;
   border-radius: 2em;
+  -webkit-backdrop-filter: saturate(1.2) blur(4px);
   backdrop-filter: saturate(1.2) blur(4px);
   border: solid 2px transparent;
   background-clip: padding-box;
@@ -335,11 +336,7 @@ button:focus {
   }
 
   button {
-    bottom: -28pt;
-  }
-
-  .copyright-container.slide-down {
-    bottom: -22pt;
+    margin-bottom: 30px;
   }
 }
 
