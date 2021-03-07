@@ -48,10 +48,12 @@ const updateUI = (data) => {
     if (weather.IsDayTime) {
       timeSrc = 'img/day.svg';
       body.className = 'day-bg';
+      time.setAttribute('alt', 'day time');
     } else {
       timeSrc = 'img/night.svg';
       body.className = 'night-bg';
       icon.className = 'icon-night';
+      time.setAttribute('alt', 'night time');
     }
     time.setAttribute('src', timeSrc);
   
