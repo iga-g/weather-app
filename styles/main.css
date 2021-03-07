@@ -1,8 +1,17 @@
+:root {
+  --transition: 0.6s;
+}
+
 *,
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  width: 100vw;
+  min-width: 100vw;
 }
 
 body {
@@ -12,7 +21,6 @@ body {
   font-family: "Poppins", sans-serif;
   color: #243046;
   -webkit-font-smoothing: antialiased;
-  width: 100vw;
 }
 
 main {
@@ -161,13 +169,6 @@ a:hover ~ .border-effect {
   align-items: center;
   margin-top: 2vh;
   max-width: inherit;
-  transition: transform 300ms ease;
-  transform: translateZ(0) scale(1) perspective(1000px);
-}
-
-.card:hover {
-  transform: scale(1.1) perspective(1500px) rotateY(5deg);
-  transition: transform 300ms ease;
 }
 
 .card img {
@@ -191,18 +192,28 @@ a:hover ~ .border-effect {
 
 .invisible {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity var(--transition) ease-in-out;
 }
 
 .visible {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+}
+
+.card .visible {
+  transition: opacity var(--transition) ease-in-out;
 }
 
 .glass {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.1);
+  transition: transform 300ms ease;
+  transform: translateZ(0) scale(1) perspective(1000px);
+}
+
+.glass:hover {
+  transform: scale(1.1) perspective(1500px) rotateY(5deg);
+  transition: transform 300ms ease;
 }
 
 .icon {
@@ -217,8 +228,6 @@ a:hover ~ .border-effect {
     rgba(103, 122, 148, 0.6) 100%
   );
   border-radius: 50%;
-
-  /* box-shadow: 2px 2px 5px rgba(46, 54, 68, 0.3); */
 }
 
 .icon-night {
@@ -227,12 +236,12 @@ a:hover ~ .border-effect {
 
 .day-bg {
   background-color: #e5ecf6;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color var(--transition) ease-in-out;
 }
 
 .night-bg {
   background-color: #313c50;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color var(--transition) ease-in-out;
   color: #e5ecf6;
 }
 
@@ -245,7 +254,7 @@ a:hover ~ .border-effect {
   justify-content: center;
   bottom: 18pt;
   top: auto;
-  transition: bottom 0.7s linear;
+  transition: bottom var(--transition) linear;
   font-size: 0.8em;
 }
 
@@ -286,7 +295,7 @@ button:focus {
 
 .copyright-container.slide-down {
   bottom: -26pt;
-  transition: bottom 0.7s linear;
+  transition: bottom var(--transition) linear;
 }
 
 @media (max-width: 600px) {
@@ -295,8 +304,13 @@ button:focus {
   }
 
   main {
-    margin: 10vh 5vw auto;
+    width: 100vw;
+    max-width: unset;
   }
+
+  /* main {
+    margin: 10vh 5vw;
+  } */
 
   .copyright-container {
     width: 300pt;
@@ -329,6 +343,11 @@ button:focus {
 @media (max-width: 376px) {
   * {
     font-size: 10px;
+  }
+
+  main {
+    width: 100vw;
+    max-width: unset;
   }
 
   .copyright-content {
