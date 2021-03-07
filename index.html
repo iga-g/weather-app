@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/acea9e66fc.js" crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="styles/main.css">  
+  <title>Weather App</title>
+</head>
+<body>
+  
+<main>
+  <div class="container">
+
+    <h1>Today's Weather</h1>
+    <div class="form">
+    <form class="change-location">
+      <label for="city">Enter a location for weather information</label>
+      <input type="text" name="city" class="inp-effect" placeholder="Type a city name here">
+      <span class="border-effect"></span>
+    </form>
+  </div>
+  </div>
+
+  <div class="card d-none">
+    <img src="https://via.placeholder.com/400x300" alt="" class="time">
+    <div class="info glass">
+      <div class="icon">
+        <img src="" alt="">
+      </div>
+      <div class="details">
+        <h5>City name</h5>
+        <div>
+          <span>temp</span><span>&deg;C</span>
+          <p>Weather condition</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright-container">
+      <div class="copyright-content">
+        <p>IG - 2021</p>
+        <div class="effect-box">
+          <a href="">More info about project</a>
+          <span class="border-effect"></span>
+        </div>
+        <div class="effect-box">
+          <a href="https://github.com/iga-g">MY GITHUB</a>
+          <span class="border-effect"></span>
+        </div>
+      </div>
+      <button>Copyright info &darr;</button>
+    </div>
+
+  </div>
+
+</main>
+
+  <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+  <script src="scripts/forecast.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
