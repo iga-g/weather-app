@@ -13,15 +13,17 @@ const updateUI = (data) => {
   const cityDets = data.cityDets;
   const weather = data.weather;
   const cityDate = new Date(weather.LocalObservationDateTime);
-  // const dayFormat = dateFns.format(new Date(cityDate), 'ddd');
-  // const dateFormat = dateFns.format(new Date(cityDate), 'DD MMMM YYYY');
+  const dayFormat = dateFns.format(new Date(cityDate), 'ddd');
+  const dateFormat = dateFns.format(new Date(cityDate), 'DD MMMM YYYY');
 
   // destructure properties
   // const { cityDets, weather } = data;
+  // ${cityDate.toDateString()}
 
   details.innerHTML = `
   <div>
-  <h6>${cityDate.toDateString()}</h6>
+  <h6>${dayFormat}</h6>
+  <h6>${dateFormat}</h6>
   <h5><i class="fas fa-map-marker-alt"></i> ${cityDets.EnglishName}</h5>
   </div>
   <div>
