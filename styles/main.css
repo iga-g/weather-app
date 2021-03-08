@@ -5,8 +5,8 @@
 *,
 html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 html {
@@ -15,16 +15,15 @@ html {
 }
 
 body {
-  background: #e5ecf6;
+  background: rgb(229, 236, 246);
   font-size: 1em;
-  font-family: "Poppins", sans-serif;
-  color: #243046;
+  font-family: Poppins, sans-serif;
+  color: rgb(36, 48, 70);
   -webkit-font-smoothing: antialiased;
 }
 
 main {
-  margin: 0 auto;
-  margin-top: 10vh;
+  margin: 10vh auto 0px;
   max-width: 350pt;
   position: relative;
 }
@@ -64,13 +63,12 @@ h6 {
 }
 
 .container {
-  /* max-width: inherit; */
   background: linear-gradient(
     135deg,
     rgba(217, 231, 247, 0.1) 10%,
     rgba(177, 192, 212, 0.3) 100%
   );
-  box-shadow: 2px 2px 5px rgba(46, 54, 68, 0.1);
+  box-shadow: rgba(46, 54, 68, 0.1) 2px 2px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +85,6 @@ form {
 }
 
 input[type="text"] {
-  -webkit-appearance: none;
   appearance: none;
   font-family: inherit;
   color: inherit;
@@ -95,7 +92,7 @@ input[type="text"] {
   width: 100%;
   height: 40px;
   background: transparent;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
   text-align: center;
 }
 
@@ -110,18 +107,18 @@ input[type="text"]:focus {
 }
 
 .inp-effect {
-  border: 0;
-  border-bottom: 1px solid #313c50;
+  border: none;
+  border-bottom: solid 2px rgb(49, 60, 80);
 }
 
 .inp-effect ~ .border-effect {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 50%;
-  width: 0;
+  width: 0px;
   height: 2px;
-  background-color: #e5ecf6;
-  transition: 0.5s;
+  background-color: rgb(229, 236, 246);
+  transition: all 0.5s ease 0s;
 }
 
 .effect-box {
@@ -134,29 +131,29 @@ a {
   color: inherit;
   position: relative;
   border: 0;
-  border-bottom: 1px solid #313c50;
+  border-bottom: solid 1px rgb(49, 60, 80);
 }
 
 a ~ .border-effect {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 50%;
-  width: 0;
+  width: 0px;
   height: 1px;
-  background-color: #e5ecf6;
+  background-color: rgb(229, 236, 246);
   transition: var(--transition);
 }
 
 a:hover ~ .border-effect {
   width: 100%;
   transition: var(--transition);
-  left: 0;
+  left: 0px;
 }
 
 .inp-effect:focus ~ .border-effect {
   width: 100%;
   transition: var(--transition);
-  left: 0;
+  left: 0px;
 }
 
 .card {
@@ -166,6 +163,7 @@ a:hover ~ .border-effect {
   align-items: center;
   margin-top: 2vh;
   width: inherit;
+  padding-bottom: 100%;
 }
 
 .card img {
@@ -173,25 +171,26 @@ a:hover ~ .border-effect {
   height: 100%;
   object-fit: cover;
   border-radius: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .info {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 30pt 30pt;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* flex-direction: column; */
+  padding: 30pt;
   border-radius: 2em;
-  -webkit-backdrop-filter: saturate(1.2) blur(4px);
   backdrop-filter: saturate(1.2) blur(4px);
-  border: solid 2px transparent;
+  border: 2px solid transparent;
   background-clip: padding-box;
-  box-shadow: 5px 5px 10px rgba(46, 54, 68, 0.1);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  box-shadow: rgba(46, 54, 68, 0.1) 5px 5px 10px;
+  inset: 0px;
 }
 
 .invisible {
@@ -211,13 +210,13 @@ a:hover ~ .border-effect {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.1);
-  transition: transform 300ms ease;
+  transition: transform 300ms ease 0s;
 }
 
 @media (pointer: fine) {
   .glass:hover {
     transform: scale(1.1) perspective(1500px) rotateY(5deg);
-    transition: transform 300ms ease;
+    transition: transform 300ms ease 0s;
   }
 }
 
@@ -225,11 +224,11 @@ a:hover ~ .border-effect {
   position: absolute;
   width: 100px;
   height: 100px;
-  bottom: 30pt;
+  bottom: 35pt;
   right: 30pt;
   background: linear-gradient(
     135deg,
-    rgb(159, 176, 196, 0.4) 10%,
+    rgba(159, 176, 196, 0.4) 10%,
     rgba(103, 122, 148, 0.6) 100%
   );
   border-radius: 50%;
@@ -240,18 +239,17 @@ a:hover ~ .border-effect {
 }
 
 .day-bg {
-  background-color: #e5ecf6;
+  background-color: rgb(229, 236, 246);
   transition: background-color var(--transition) ease-in-out;
 }
 
 .night-bg {
-  background-color: #313c50;
+  background-color: rgb(49, 60, 80);
   transition: background-color var(--transition) ease-in-out;
-  color: #e5ecf6;
+  color: rgb(229, 236, 246);
 }
 
 .copyright-container {
-  /* position: absolute; */
   width: 100%;
   max-width: 320pt;
   display: flex;
@@ -262,8 +260,7 @@ a:hover ~ .border-effect {
   top: auto;
   transition: transform var(--transition) linear;
   font-size: 0.8em;
-  margin: 0 auto;
-  /* opacity: 0; */
+  margin: 0px auto;
   transform: translateY(-35px);
 }
 
@@ -277,7 +274,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   opacity: 0.7;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 button:focus {
@@ -291,14 +288,13 @@ button:focus {
     rgba(177, 192, 212, 0.3) 10%,
     rgba(217, 231, 247, 0.1) 100%
   );
-  box-shadow: 2px 2px 5px rgba(46, 54, 68, 0.1);
+  box-shadow: rgba(46, 54, 68, 0.1) 2px 2px 5px;
   border-radius: 1.5em;
   padding: 1em;
   z-index: -1;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* margin: 0 auto; */
   opacity: 0;
   transition: transform var(--transition) linear,
     opacity var(--transition) linear;
@@ -309,7 +305,6 @@ button:focus {
 }
 
 .copyright-container.slide-down {
-  /* bottom: -26pt; */
   transform: translateY(15px);
   opacity: 1;
   transition: transform var(--transition) linear,
@@ -334,7 +329,7 @@ button:focus {
   }
 
   .info {
-    padding: 20pt 20pt;
+    padding: 20pt;
   }
 
   .icon {
