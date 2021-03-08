@@ -173,11 +173,6 @@ a:hover ~ .border-effect {
   height: 100%;
   object-fit: cover;
   border-radius: 2em;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
 
 .info {
@@ -193,6 +188,10 @@ a:hover ~ .border-effect {
   border: solid 2px transparent;
   background-clip: padding-box;
   box-shadow: 5px 5px 10px rgba(46, 54, 68, 0.1);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .invisible {
