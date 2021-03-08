@@ -163,7 +163,7 @@ a:hover ~ .border-effect {
   align-items: center;
   margin-top: 2vh;
   width: inherit;
-  padding-bottom: 100%;
+  /* padding-bottom: 100%; */
 }
 
 .card img {
@@ -171,11 +171,6 @@ a:hover ~ .border-effect {
   height: 100%;
   object-fit: cover;
   border-radius: 2em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .info {
