@@ -1,5 +1,7 @@
 :root {
-  --transition: 0.6s;
+  --light-color: rgb(229, 236, 246);
+  --dark-color: rgb(49, 60, 80);
+  --transition-time: 0.6s;
 }
 
 *,
@@ -141,18 +143,18 @@ a ~ .border-effect {
   width: 0px;
   height: 1px;
   background-color: rgb(229, 236, 246);
-  transition: var(--transition);
+  transition: var(--transition-time);
 }
 
 a:hover ~ .border-effect {
   width: 100%;
-  transition: var(--transition);
+  transition: var(--transition-time);
   left: 0px;
 }
 
 .inp-effect:focus ~ .border-effect {
   width: 100%;
-  transition: var(--transition);
+  transition: var(--transition-time);
   left: 0px;
 }
 
@@ -195,7 +197,7 @@ a:hover ~ .border-effect {
 
 .invisible {
   opacity: 0;
-  transition: opacity var(--transition) ease-in-out;
+  transition: opacity var(--transition-time) ease-in-out;
 }
 
 .visible {
@@ -203,7 +205,7 @@ a:hover ~ .border-effect {
 }
 
 .card .visible {
-  transition: opacity var(--transition) ease-in-out;
+  transition: opacity var(--transition-time) ease-in-out;
 }
 
 .glass {
@@ -258,7 +260,7 @@ a:hover ~ .border-effect {
   justify-content: center;
   bottom: 18pt;
   top: auto;
-  transition: transform var(--transition) linear;
+  transition: transform var(--transition-time) linear;
   font-size: 0.8em;
   margin: 0px auto;
   transform: translateY(-47px);
@@ -296,8 +298,8 @@ button:focus {
   align-items: center;
   justify-content: space-evenly;
   opacity: 0;
-  transition: transform var(--transition) linear,
-    opacity var(--transition) linear;
+  transition: transform var(--transition-time) linear,
+    opacity var(--transition-time) linear;
 }
 
 .copyright-container.slide-down > .copyright-content {
@@ -307,8 +309,8 @@ button:focus {
 .copyright-container.slide-down {
   transform: translateY(15px);
   /* opacity: 1; */
-  transition: transform var(--transition) linear,
-    opacity var(--transition) linear;
+  transition: transform var(--transition-time) linear,
+    opacity var(--transition-time) linear;
 }
 
 @media (max-width: 600px) {
