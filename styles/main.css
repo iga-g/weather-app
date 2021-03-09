@@ -109,6 +109,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 }
 .details p {
   font-size: 2em;
@@ -162,7 +163,6 @@ button:focus {
   align-items: center;
   margin-top: 2vh;
   width: inherit;
-  z-index: 1;
 }
 .card img {
   width: 100%;
@@ -198,6 +198,7 @@ button:focus {
   border: 2px solid transparent;
   /* background-clip: padding-box; */
   transition: transform 300ms ease 0s;
+  z-index: 1;
 }
 @media (pointer: fine) {
   .glass:hover {
@@ -214,6 +215,7 @@ button:focus {
   right: 30pt;
   background: linear-gradient(135deg, rgba(159, 176, 196, 0.4) 10%, rgba(103, 122, 148, 0.6) 100%);
   border-radius: 50%;
+  z-index: 2;
 }
 
 .icon-night {

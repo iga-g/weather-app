@@ -119,6 +119,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 
   p {
     font-size: 2em;
@@ -175,7 +176,6 @@ button {
   align-items: center;
   margin-top: 2vh;
   width: inherit;
-  z-index: 1;
 
   & img {
     width: 100%;
@@ -212,6 +212,7 @@ button {
   border: 2px solid transparent;
   /* background-clip: padding-box; */
   transition: transform 300ms ease 0s;
+  z-index: 1;
 
   @media (pointer: fine) {
     &:hover {
@@ -229,6 +230,7 @@ button {
   right: 30pt;
   background: linear-gradient(135deg, rgba(159, 176, 196, 0.4) 10%, rgba(103, 122, 148, 0.6) 100%);
   border-radius: 50%;
+  z-index: 2;
 }
 
 .icon-night {
