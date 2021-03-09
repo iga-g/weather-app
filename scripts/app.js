@@ -10,6 +10,9 @@ const copyright = document.querySelector('.copyright-container');
 
 const updateUI = (data) => {
 
+  // destructure properties
+  // const { cityDets, weather } = data;
+
   const cityDets = data.cityDets;
   const weather = data.weather;
   const cityDate = new Date(weather.LocalObservationDateTime);
@@ -19,10 +22,6 @@ const updateUI = (data) => {
   card.classList.remove('visible');
   card.classList.add('invisible');
   button.classList.remove('invisible');
-
-  // destructure properties
-  // const { cityDets, weather } = data;
-  // ${cityDate.toDateString()}
 
   setTimeout(function () {
     card.classList.remove('invisible');
