@@ -18,6 +18,7 @@ const updateUI = (data) => {
 
   card.classList.remove('visible');
   card.classList.add('invisible');
+  button.classList.remove('invisible');
 
   // destructure properties
   // const { cityDets, weather } = data;
@@ -56,10 +57,6 @@ const updateUI = (data) => {
       time.setAttribute('alt', 'night time');
     }
     time.setAttribute('src', timeSrc);
-  
-    if (weather.IsDayTime && icon.classList) {
-      icon.classList.remove('icon-night');
-    }
 
   }, 500);
   

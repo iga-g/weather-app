@@ -163,6 +163,7 @@ a:hover ~ .border-effect {
   align-items: center;
   margin-top: 2vh;
   width: inherit;
+  z-index: 1;
   /* padding-bottom: 100%; */
 }
 
@@ -260,7 +261,7 @@ a:hover ~ .border-effect {
   transition: transform var(--transition) linear;
   font-size: 0.8em;
   margin: 0px auto;
-  transform: translateY(-35px);
+  transform: translateY(-47px);
 }
 
 button {
@@ -273,7 +274,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   opacity: 0.7;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 button:focus {
@@ -305,7 +306,7 @@ button:focus {
 
 .copyright-container.slide-down {
   transform: translateY(15px);
-  opacity: 1;
+  /* opacity: 1; */
   transition: transform var(--transition) linear,
     opacity var(--transition) linear;
 }
