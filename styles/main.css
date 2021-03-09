@@ -194,6 +194,7 @@ button:focus {
   height: 100%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: saturate(1.2) blur(4px);
+  -webkit-backdrop-filter: saturate(1.2) blur(4px);
   border: 2px solid transparent;
   /* background-clip: padding-box; */
   transition: transform 300ms ease 0s;
