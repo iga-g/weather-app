@@ -23,7 +23,7 @@ As a development of this project I think I would like to make something like val
 
 [Adam Whitcroft](https://dribbble.com/shots/544084-Climacons) for Climacons,
 
-[Twitter](https://twemoji.twitter.com/) for Twemoji [(CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+[Twitter - Twemoji](https://twemoji.twitter.com/) for favicon [(CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 
 ## Project status
 
