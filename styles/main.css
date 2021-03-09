@@ -104,23 +104,6 @@ button:focus {
   outline: none;
 }
 
-.details {
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 2;
-}
-.details p {
-  font-size: 2em;
-  font-weight: 500;
-}
-.details span {
-  font-weight: 700;
-  font-size: 4.8em;
-  line-height: 0.5em;
-}
-
 .container {
   background: linear-gradient(135deg, rgba(217, 231, 247, 0.1) 10%, rgba(177, 192, 212, 0.3) 100%);
   box-shadow: rgba(46, 54, 68, 0.1) 2px 2px 5px;
@@ -130,6 +113,7 @@ button:focus {
   justify-content: space-around;
   padding: 1.5em;
   border-radius: 2em;
+  min-height: 200px;
 }
 
 .inp-effect {
@@ -205,6 +189,23 @@ button:focus {
     transform: scale(1.1) perspective(1500px) rotateY(5deg);
     transition: transform 300ms ease 0s;
   }
+}
+
+.details {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+.details p {
+  font-size: 2em;
+  font-weight: 500;
+}
+.details span {
+  font-weight: 700;
+  font-size: 4.8em;
+  line-height: 0.5em;
 }
 
 .icon {
