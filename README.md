@@ -4,7 +4,7 @@
 
 It's weather app which I made basing on The Net Ninja course. However there is a lot of functionalites and design solutions made by me, such as:
 - taking Date data and formatting it by [date-fns](https://date-fns.org/) library.
-- changing background-color of website (+transitions) depends on day/night result
+- changing background-color of website (+transitions) dependent on day/night result
 - effective input and hover effect on anchors
 - new glassy trend on card with some transform effects
 - copyright info box which is interactive
