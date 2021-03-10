@@ -113,7 +113,6 @@ button:focus {
   justify-content: space-around;
   padding: 1.5em;
   border-radius: 2em;
-  min-height: 200px;
 }
 
 .inp-effect {
