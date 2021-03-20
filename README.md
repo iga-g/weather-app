@@ -4,7 +4,7 @@
 
 It's weather app which I made basing on The Net Ninja course. However there is a lot of functionalites and design solutions made by me, such as:
 - taking Date data and formatting it by [date-fns](https://date-fns.org/) library.
-- changing background-color of website (+transitions) depends on day/night result
+- changing background-color of website (+transitions) dependent on day/night result
 - effective input and hover effect on anchors
 - new glassy trend on card with some transform effects
 - copyright info box which is interactive
@@ -15,7 +15,7 @@ Also I wanted to start my road to learning SCSS so I used this project to do it.
 
 As a development of this project I think I would like to make something like validation on the input to let people know if they enter wrong city name.
 
-## Contributing
+## Authors and acknowledgment
 
 ♡ Thanks to:
 
