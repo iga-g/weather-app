@@ -15,7 +15,7 @@ Also I wanted to start my road to learning SCSS so I used this project to do it.
 
 As a development of this project I think I would like to make something like validation on the input to let people know if they enter wrong city name.
 
-## Contributing
+## Authors and acknowledgment
 
 ♡ Thanks to:
 
